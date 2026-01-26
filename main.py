@@ -1,5 +1,5 @@
 print("Aiden Molinary")
-# Using the pound/hashtag symbol is a way to do comments.
+# Using the pound/hashtag '#' symbol is a way to do comments.
 print('Hello, how are you?')
 
 name = "Scooby" #variables unlike other languages don't have a type.
