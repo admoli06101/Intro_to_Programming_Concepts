@@ -1,7 +1,7 @@
 # create a list in python
-#lets start with a list of fruit
-#mutable
-#Index - always start a 0, Grape would be 3, Orange 4, if mentioning 5, it will be nothing
+# lets start with a list of fruit
+# mutable
+# Index - always start a 0, Grape would be 3, Orange 4, if mentioning 5, it will be nothing
 # A list could be dynamic, 0 to many, not static
 # a List a square brackets
 # A list it Mutable
@@ -69,7 +69,3 @@ print(carTuple[2])
 
 toyTuple = carTuple
 print(toyTuple)
-
-
-
-inputGrades = int( )
