@@ -13,6 +13,26 @@
 #print(khoaCar.brand)
 #print(johanCar.doorCount)
 
+#Making a classroom with 1 person inside
+
+#class Person:
+    #def __init__(self,age, name, major):
+        #self.age = age
+        #self.name = name
+        #self.major = major
+
+#class Classroom:
+    #def __init__(self, Person, course):
+        #self.Person = Person
+        #self.course = course
+
+#student = Person(18, "Olivia", "college")
+#introClass = Classroom(student, "Intro to Programming Concepts")
+
+#print(introClass.Person.name)
+
+#adding more than 1 person to a classroom
+
 class Person:
     def __init__(self,age, name, major):
         self.age = age
@@ -20,3 +40,24 @@ class Person:
         self.major = major
 
 class Classroom:
+    def __init__(self, course):
+        self.people = []
+        self.course = course
+
+    def add_person(self, Person):
+        self.people.append(Person)
+
+student = Person(18, "Olivia", "college")
+student2 = Person(23, "Fred", "business")
+student3 = Person(28, "Laura", "computer science")
+
+introClass = Classroom("Intro to Programming Concepts")
+
+introClass.add_person(student)
+introClass.add_person(student2)
+introClass.add_person(student3)
+
+for person in introClass.people:
+    print(person.name)
+
+print(introClass.people)
