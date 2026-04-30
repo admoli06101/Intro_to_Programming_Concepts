@@ -1,10 +1,8 @@
 def circle_area(pi, radius):
     return pi * radius * radius
 
-
 def total_due(money, tax):
     return money + (money * tax)
-
 
 def to_celsius(fahrenheit):
     return (fahrenheit - 32) * (5/9)
@@ -12,17 +10,17 @@ def to_celsius(fahrenheit):
 
 radius = float(input("Enter the radius: "))
 pi = 3.14
-area = circle_area(pi, radius)
-print(area)
+
+print(round(circle_area(pi, radius), 2))
 
 money = float(input("Enter the amount of money: "))
-tax_input = input("Enter the tax rate: ")
+
+tax_input = input("Enter the tax rate (like 6%): ")
 
 tax = float(tax_input.replace('%', '')) / 100
 
-total = total_due(money, tax)
-print(total)
+print(round(total_due(money, tax), 2))
 
 fahrenheit = float(input("Enter the temperature in Fahrenheit: "))
-celsius = to_celsius(fahrenheit)
-print(celsius)
+
+print(round(to_celsius(fahrenheit), 5))
